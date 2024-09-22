@@ -2,7 +2,7 @@ import cv2
 import os
 
 # 開啟影片檔案 Open the file
-cap = cv2.VideoCapture('original.avi')
+cap = cv2.VideoCapture('circle.avi')
 
 #設定輸出的資料夾，預設是此檔案所在位置在建立一個output Set output folder here
 output_dir = './output'
@@ -12,7 +12,7 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 #設定第一幀的編號 Set first frame's name
-c=1
+c=0
 
 # 用迴圈從影片檔案讀取幀，並顯示出來 Use while to get the frame from video
 while(cap.isOpened()):
